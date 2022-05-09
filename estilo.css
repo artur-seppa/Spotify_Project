@@ -1,0 +1,248 @@
+/*
+*
+*
+projeto bootstrap
+verson 1.0
+*
+*
+/
+
+/************************layout*************************/
+body,html,.capa{
+	height: 100%;
+	overflow: auto;
+}
+
+body{
+	background: url('imagens/capa.png') ,
+				url('imagens/ruido.png') ,
+				linear-gradient(50deg,#ff4169,#7c26f8);	
+	background-attachment: fixed;
+	font-family:Arial, Helvetica, sans-serif;
+	overflow-x: hidden;			
+}
+/***********navegação************/
+.img-logo{
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('imagens/spotify.svg') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+.navbar-transparente{
+	padding: 15px 0px;
+	background: rgb(0,0,0,0.6);
+}
+
+.navbar-brand{
+	padding: 5px 15px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: #FFF;
+
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+	color:#1DB954 ;
+	
+}
+
+.divisor{
+	font-size: 18px;
+	color: white;
+	margin:11px 0px;
+}
+/**********capa**************/
+.capa{
+	display: table;
+	width: 100%;
+}
+
+.texto-capa{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+}
+
+/*************botoes***************/
+.botton-custom{
+	text-transform: uppercase;
+	border-radius: 500px;
+	color: white;
+	padding: 10px 35px;
+}
+
+.btn-roxo{
+	background-color: #7c25f8;
+}
+
+.btn-roxo:hover{
+	transition: all 0,4s;
+	background-color: #6207e3;
+	color: white;
+}
+
+.btn-branco{
+	border: 2px solid white;
+}
+
+.btn-branco:hover{
+	transition: all 0,4s;
+	background-color: white;
+	color: black;
+}
+
+/*=========conteúdo do site=========*/
+
+#serviços{
+	background: white;
+	padding: 20px 0px;
+}
+
+.albuns{
+	padding: 10px 0px;
+}
+
+#recursos{
+	padding: 20px 0px;
+	color: white;
+}
+
+.rotaçao{
+	transform: rotate(30deg); 
+}
+
+.phones{
+	padding-left: 80px;
+}
+
+/*----------rodapé--------------*/
+
+footer{
+	padding: 50px 0px 20px 0px;
+	background: #000;
+	position: relative;
+}
+
+.redes-sociais{
+	float: right;
+}
+
+/*=========media queries=========*/
+
+/*media
+*/
+
+/*dispoditivo xs*/
+@media screen and (max-width: 767px){
+	h1{
+		font-size: 55px;
+	}
+
+	h2{
+		font-size: 37px;
+	}
+
+	.botton-custom{
+		margin: 10px 15px;
+	}
+}
+
+/*dispoditivo sm*/
+@media screen and (min-width: 768px){
+	h1{
+		font-size: 70px;
+	}
+
+	h2{
+		font-size: 40px;
+	}
+
+
+	.botton-custom{
+		margin: 15px 15px;
+	}
+
+}
+
+/*dispoditivo md*/
+@media screen and (min-width: 992px){
+	h1{
+		font-size: 80px;
+	}
+
+	h2{
+		font-size: 45px;
+	}
+
+	.botton-custom{
+		margin: 15px 15px;
+	}
+}
+
+/*dispoditivo lg*/
+@media screen and (min-width: 1200px){
+	h1{
+		font-size: 90px;
+	}
+
+	h2{
+		font-size: 45px;
+	}
+
+	.botton-custom{
+		margin: 15px 15px;
+	}
+}
+
+
+/************************tipografia*************************/
+
+p{
+	font-size: 17px;
+}
+
+h1{
+	font-weight: 900px;
+	letter-spacing: -0.04em;
+	margin-bottom: 40px;
+}
+
+h2{
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3{
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+#serviços h2, #serviços h3{
+	color: #7c25f8;
+}
+
+#recursos h3{
+	color: #9bf0e1;
+}
+
+#rodapé h4{
+	color: #808080;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+#rodapé li a{
+	color: white;
+}
+
+#rodapé li a:hover{
+	color:#1DB954 ;
+	background: none;
+}
+
